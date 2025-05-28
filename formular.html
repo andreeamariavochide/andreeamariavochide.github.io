@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formular de contact</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-top: 10px;
+        }
+
+        input[type="submit"] {
+            margin-top: 15px;
+            padding: 8px 12px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Formular de Înregistrare</h2>
+
+    <form action="#" method="post">
+        <label for="nume">Nume:</label>
+        <input type="text" id="nume" name="nume" required>
+
+        <label for="prenume">Prenume:</label>
+        <input type="text" id="prenume" name="prenume" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="parola">Parola:</label>
+        <input type="password" id="parola" name="parola" required>
+
+        <label for="telefon">Numar de telefon:</label>
+        <input type="number" id="telefon" name="telefon" required>
+
+        <label>
+            <input type="checkbox" id="termeni" name="termeni" required>
+            Acceptati termenii si conditiile
+        </label>
+
+        <input type="submit" value="Trimite">
+    </form>
+
+</body>
+</html>
